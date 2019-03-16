@@ -19,10 +19,8 @@ public class Enemy_movement : MonoBehaviour
         transform.Translate(currentMoveDir * enemyPref.speed * Time.deltaTime);
         //transform.LookAt(currentMoveDir + transform.position);
         //transform.rotation = Quaternion.LookRotation(currentMoveDir);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(currentMoveDir, Vector3.up), 0.15F);
-        Vector3 direction = (currentMoveDir - transform.position).normalized;
-        Quaternion look = Quaternion.LookRotation(direction);
-        transform.rotation = look;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(currentMoveDir, Vector3.up), 0.15F);
+
 
         if (Input.GetKeyDown(KeyCode.I))
         {

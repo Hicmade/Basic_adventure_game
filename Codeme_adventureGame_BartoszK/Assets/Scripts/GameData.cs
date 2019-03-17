@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class GameData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int playerLife = 100;
+    public bool[] keyNumber = new bool[4];
 }

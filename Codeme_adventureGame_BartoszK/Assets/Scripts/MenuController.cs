@@ -9,4 +9,12 @@ public class MenuController : MonoBehaviour
     public void StartGame() {
         SceneManager.LoadScene("Game1");
     }
+
+    public void LoadGame() {
+
+    }
+
+    public void EndGame() {
+        Application.Quit();
+    }
 }

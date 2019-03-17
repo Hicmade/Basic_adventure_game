@@ -1,36 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!54 &746928721
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934180513820679564}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 8
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!136 &746928720
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934180513820679564}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &4889020445995228821
+--- !u!114 &5597009749614691991
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87698819e6ab16b4cbf49a634e7819bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPref: {fileID: 11400000, guid: f0cdcc2be321be94fa339f2c82707b5b, type: 2}
+  enemyPref: {fileID: 0}
 --- !u!1001 &4179754477450823451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54,6 +24,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mummy_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349168030460517015, guid: 8dc4abcae6aadd0458657d2fdaededdc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1349168030460806839, guid: 8dc4abcae6aadd0458657d2fdaededdc,
         type: 3}
@@ -111,7 +86,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 7093041307770370585, guid: 8dc4abcae6aadd0458657d2fdaededdc, type: 3}
+    - {fileID: 6612306698247993883, guid: 8dc4abcae6aadd0458657d2fdaededdc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8dc4abcae6aadd0458657d2fdaededdc, type: 3}
 --- !u!1 &2934180513820679564 stripped
 GameObject:

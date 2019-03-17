@@ -36,4 +36,8 @@ public class Enemy_movement : MonoBehaviour
             yield return new WaitForSeconds(enemyPref.changeDirectionRate);
         }
     }
+
+    public int GetBitePower() {
+        return enemyPref.bitePower;
+    }
 }

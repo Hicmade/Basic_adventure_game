@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     public GameObject boom;
     public GameObject player;
 
+    public SaveManager savMan;
+
     public void Awake()
     {
         Time.timeScale = 1;
@@ -86,5 +88,17 @@ public class GameController : MonoBehaviour
         Vector3 vec = player.transform.position;
         Instantiate(boom, vec, Quaternion.identity);
         StartCoroutine(WaitForPanelWin());
+    }
+
+    public void SaveGame() {
+        savMan.SaveThisGame();
+    }
+
+    public void LoadGame() {
+        savMan.LoadThisGame();
+    }
+
+    public void ClosePanel() {
+        uimanager.ClosePause();
     }
 }
